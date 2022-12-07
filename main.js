@@ -37,7 +37,7 @@ function logic(userChoice, computerChoice) {
 // to close it ctrl + Cre
 
 rpsInterface.question('Pick a hand: ', (userInput) => {
-  const userChoice = userInput.toLowerCase();
+  const userChoice = userInput.toLowerCase().trim();
   if (userChoice !== "rock" && userChoice !== "paper" && userChoice !== "scissors") {
     console.log("invalid input provided, has to be rock, paper, or scissors");
     console.log("Rerun 'node main.js' and try again");
